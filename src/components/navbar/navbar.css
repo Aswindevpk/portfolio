@@ -1,0 +1,125 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 6rem;
+}
+.navbar-border {
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-text);
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-links_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-links_logo p {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 50px;
+  display: flex;
+  line-height: 50px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.navbar-links_container p {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--color-white);
+  margin-left: 8rem;
+}
+.navbar-menu_toggle {
+  display: none;
+} 
+
+.navbar-cta{
+  color: var(--color-text);
+  font-size: 16px;
+  border: 2px solid var(--color-text);
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 8px 20px;
+  font-family: var(--font-primary);
+  background-color:transparent;
+  cursor: pointer;          /* Pointer cursor */
+  transition: var(--color-text) 0.5s ease; /* Smooth hover effect */
+}
+
+.navbar-cta:hover {
+  background-color: var(--color-text); /* Darker blue on hover */
+  color: var(--color-bg);
+}
+
+.navbar-cta:active {
+  background-color: var(--color-text); /* Even darker blue when pressed */
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar-links_container p {
+    margin-left: 4rem;
+  }
+  .navbar{
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2.5rem;
+  }
+
+  .navbar-links_container {
+    display: none;
+  }
+
+  .navbar-menu_toggle {
+    display: flex;
+  }
+
+  .navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+    padding:0.5rem 1rem;
+    color: white;
+    position: absolute;
+    top: 3.5rem;
+    right:2.5rem;
+    min-width: 80px;
+    background-color: var(--color-text);
+    border-radius: 5px;
+    z-index: 1;
+}
+.navbar-links_container-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navbar-menu_container-links p{
+      font-family: var(--font-primary);
+      font-size: 18px;
+      padding: 0.5rem;
+  }
+  .navbar-menu_container-links p:hover{
+    color: var(--color-bg);
+    font-size: 18px;
+    font-weight: 500;
+}
+  
+}
+
+@media screen and (max-width: 500px) {
+}

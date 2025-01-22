@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+  --font-primary:'Poppins',sans-serif;
+  --font-secondary:'Open-Sans',sans-serif;
+
+  --gradient-text: linear-gradient(49deg, #DED6FF 0%, #1e1e20 93.93%);
+  --color-bg:#ffffff;
+  --color-text:#6c63ff;
+  --color-light:#858585;
+  --color-white:#090814;
+  --color-extralight:#f1f1f1;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
