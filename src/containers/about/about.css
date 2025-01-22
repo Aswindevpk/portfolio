@@ -1,7 +1,6 @@
 .about {
   display: flex;
   flex-direction: column;
-  padding: 3rem 8rem;
 }
 
 .about p {
@@ -21,7 +20,7 @@
 }
 
 .about-profile p {
-  width: 70%;
+  width: 60%;
   font-family: var(--font-primary);
   font-weight: 400;
   font-size: 18px;
@@ -36,28 +35,20 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .about {
-    padding: 3rem 2rem;
-  }
   .about-profile p {
     font-size: 16px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .about {
-    padding: 3rem 1rem;
-  }
   .about-profile p {
     font-size: 15px;
     line-height: 24px;
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .about {
-    padding: 2rem 0rem;
-  }
   .about-profile p {
     font-size: 14px;
     line-height: 24px;

@@ -9,7 +9,7 @@ function Card({title,logo,body,tools}) {
       <p>{body}</p>
       <h6>Dev tools</h6>
       {tools.map(tool=>(
-        <p>{tool}</p>
+        <p key={tool}>{tool}</p>
       ))
       }
 

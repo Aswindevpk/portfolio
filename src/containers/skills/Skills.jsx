@@ -15,37 +15,33 @@ import react from "../../assets/skillLogo/react.svg";
 function Skills() {
   const skillList = [
     {
+      id:1,
       title: "Web Designer",
       logo: Design,
       body: "I value the content, stucture, font, color , Targeted Audience,etc",
       tools: ["Figma", "illustrator", "draw.io"],
     },
     {
+      id:2,
       title: "FrontEnd Developer",
       logo: FrontEnd,
       body: "I like to code the simple website from scratch in popular frameworks.",
-      tools: ["React", "Bootrap", "html/css", ""],
+      tools: ["React.js", "Bootrap", "HTML5/CSS", "JavaScript", "TypeScript"],
     },
     {
+      id:3,
       title: "BackEnd Developer",
       logo: backEnd,
       body: "I mostly like to design the database and the main engine of the website",
-      tools: ["hi", "how"],
+      tools: ["Node.js", "Django","Postgresql","REST API", "JWT"],
     },
   ];
   return (
-    <div id="skills" className="skills ">
-      {/* <div className="skills-logo  ">
-        <img src={figma} alt="" />
-        <img src={react} alt="" />
-        <img src={dj} alt="" />
-        <img src={github} alt="" />
-        <img src={py} alt="" />
-        <img src={js} alt="" />
-      </div> */}
+    <div id="skills" className="skills">
       <div className="skills-card">
         {skillList.map((obj) => (
           <Card
+            key={obj.id}
             title={obj.title}
             logo={obj.logo}
             body={obj.body}

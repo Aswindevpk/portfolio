@@ -1,17 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./navbar.css";
-import toggleBar from "../../assets/toggleBar.png";
-import toggleBarClose from "../../assets/toggleBarClose.png";
+
 
 function Navbar() {
-  const [toggleMenu, setToggleMenu] = useState(false);
-  const Menu = () => (
-    <>
-      <p>
-        <button className="navbar-cta">Contact</button>
-      </p>
-    </>
-  );
   return (
     <div>
       <div className="navbar">
@@ -20,38 +11,12 @@ function Navbar() {
             <p>a.</p>
           </div>
           <div className="navbar-links_container">
-            <Menu />
+            <p>
+              <a href="https://drive.google.com/file/d/1H2O6bBZydpKLf-LBOBZJwIM2eFy8Y1qn/view?usp=sharing" target="_blank" className="navbar-cta">Get Resume</a>
+            </p>
           </div>
-        </div>
-        <div className="navbar-menu">
-          <div className="navbar-menu_toggle">
-            {toggleMenu ? (
-              <button
-                onClick={() => setToggleMenu(false)}
-                style={{ all: "unset", cursor: "pointer" }}
-              >
-                <img src={toggleBarClose} alt="Close menu" />
-              </button>
-            ) : (
-              <button
-                onClick={() => setToggleMenu(true)}
-                style={{ all: "unset", cursor: "pointer" }}
-              >
-                <img src={toggleBar} alt="Open menu" />
-              </button>
-            )}
-          </div>
-          {toggleMenu ? (
-            <div className="navbar-menu_container">
-              <div className="navbar-menu_container-links">
-                <Menu />
-              </div>
-            </div>
-          ) : null}
         </div>
       </div>
-
-      {/* <div className="navbar-border"></div> */}
     </div>
   );
 }

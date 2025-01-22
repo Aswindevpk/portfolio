@@ -37,6 +37,17 @@
   color: var(--color-light);
 }
 
+.header-social img {
+  width: 30px;
+}
+
+.header-social {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 1150px) {
   .header {
     padding: 3rem 2rem;
