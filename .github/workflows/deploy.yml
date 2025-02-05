@@ -23,6 +23,10 @@ jobs:
         with:
           node-version: 22.11.0
 
+      - name: Create .env file
+        run: echo "VITE_GOOGLE_ANALYTICS_ID=${{ secrets.VITE_GOOGLE_ANALYTICS_ID }}" > .env
+
+
       # Install dependencies
       - name: Install dependencies
         run: npm install

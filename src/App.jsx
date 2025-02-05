@@ -16,7 +16,7 @@ function App() {
   }, [])
 
   useEffect(()=>{
-    const TRACKING_ID = 'REMOVED'
+    const TRACKING_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_ID
     ReactGa.initialize(TRACKING_ID)
     // to report page view 
     ReactGa.send({hittype:'pageview', page: '/home'})
